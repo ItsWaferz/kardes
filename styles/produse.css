@@ -1,3 +1,51 @@
+.grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+}
+
+.produse {
+    background-color: rgba(0, 0, 0, 0.377);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.527);
+}
+
+img {
+    height: 200px;
+    border-radius: 10px;
+}
+
+.produse:hover {
+    background-color: rgba(0, 0, 0, 0.219);
+    margin: 3px;
+    border: 2px;
+    padding: 25px;
+    border-style: solid;
+    border-color: rgba(167, 167, 167, 0.322);
+}
+
+.imagine-produs {
+    margin: 25px;
+}
+
+h1 {
+    margin: 10px;
+}
+
+p {
+    font-weight: 500;
+}
+
+label {
+    font-weight: 300;
+    padding: 20px;
+}
+
 nav span {
     z-index: 101;
     position: absolute;
@@ -30,6 +78,11 @@ nav a:nth-child(4):hover~span {
     width: 176px;
 }
 
+@media (max-width: 1500px) {
+    .grid-layout {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
 
 @media (max-width: 1400px) {
     .section {
@@ -41,6 +94,10 @@ nav a:nth-child(4):hover~span {
 @media (max-width: 1250px) {
     .section {
         flex-direction: column;
+    }
+
+    .grid-layout {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -107,6 +164,10 @@ nav a:nth-child(4):hover~span {
     nav a:nth-child(4):hover~span {
         left: 432px;
         width: 104px;
+    }
+
+    .grid-layout {
+        grid-template-columns: 1fr; 
     }
 }
 
