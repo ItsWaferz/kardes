@@ -1,0 +1,174 @@
+nav span {
+    z-index: 101;
+    position: absolute;
+    top: 0;
+    left: 155px;
+    background-color: rgba(156, 107, 0, 0.918);
+    height: 100%;
+    width: 184px;
+    border-radius: 20px;
+    transition: .2s ease;
+}
+
+nav a:nth-child(1):hover~span {
+    left: 0;
+    width: 155px;
+}
+
+nav a:nth-child(2):hover~span {
+    left: 155px;
+    width: 185px;
+}
+
+nav a:nth-child(3):hover~span {
+    left: 340px;
+    width: 357px;
+}
+
+nav a:nth-child(4):hover~span {
+    left: 697px;
+    width: 176px;
+}
+
+
+@media (max-width: 1400px) {
+    .section {
+        font-size: 1.2rem;
+    }
+
+}
+
+@media (max-width: 1250px) {
+    .section {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1050px) {
+    nav div {
+        font-size: 1.4rem;
+        padding: 15px 25px;
+    }
+
+    nav span {
+        width: 144px;
+        left: 120px;
+    }
+
+    nav a:nth-child(1):hover~span {
+        left: 0;
+        width: 120px;
+    }
+    nav a:nth-child(2):hover~span {
+        left: 120px;
+        width: 144px;
+    }
+    
+    nav a:nth-child(3):hover~span {
+        left: 264px;
+        width: 286px;
+    }
+    
+    nav a:nth-child(4):hover~span {
+        left: 550px;
+        width: 137px;
+    }
+}
+
+@media (max-width: 850px) {
+    .row {
+        flex-direction: column;
+    }
+
+    nav div {
+        font-size: 1.2rem;
+        padding: 15px 15px;
+    }
+
+    nav span {
+        width: 110px;
+        left: 90px;
+    }
+
+    nav a:nth-child(1):hover~span {
+        left: 0;
+        width: 90px;
+    }
+    nav a:nth-child(2):hover~span {
+        left: 90px;
+        width: 110px;
+    }
+    
+    nav a:nth-child(3):hover~span {
+        left: 200px;
+        width: 232px;
+    }
+    
+    nav a:nth-child(4):hover~span {
+        left: 432px;
+        width: 104px;
+    }
+}
+
+@media (max-width: 676px) {
+        
+    body {
+        padding-top: 6.5rem;
+    }
+    .hamburger {
+        display: flex;
+    }
+
+    header{
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: rgb(194, 133, 0);
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav div {
+        padding: 10px;
+    }
+
+    nav.active{
+        display: flex;
+    }
+    .logo {
+        height: 80px;
+    }
+    nav span {
+        left: 0;
+        top: 46px;
+        width: 100%;
+        height: 46px;
+    }
+
+    nav a:nth-child(1):hover~span {
+        top: 0px;
+        width: 100%;
+        left: 0;
+    }
+
+    nav a:nth-child(2):hover~span {
+        top: 46px;
+        width: 100%;
+        left: 0;
+    }
+    
+    nav a:nth-child(3):hover~span {
+        top: 92px;
+        width: 100%;
+        left: 0;
+    }
+    
+    nav a:nth-child(4):hover~span {
+        top: 138px;
+        width: 100%;
+        left: 0;
+    }
+}
