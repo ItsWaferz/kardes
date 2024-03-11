@@ -10,7 +10,13 @@ body {
     color: whitesmoke;
     position: relative;
     padding-bottom: 40px;
-    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100dvh - 184px);
+}
+
+.rows {
+    flex-grow: 1;
 }
 
 header {
