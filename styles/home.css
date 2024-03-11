@@ -89,6 +89,13 @@ h1 {
     align-items: center;
 }
 
+.facebook:hover,
+.instagram:hover,
+.telefon:hover {
+    text-decoration: underline;
+    color: rgb(219, 219, 219);
+}
+
 nav span {
     z-index: 101;
     position: absolute;
