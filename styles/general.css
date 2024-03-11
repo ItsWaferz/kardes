@@ -2,10 +2,9 @@ body {
     margin: 0;
     font-family: Kalnia, Arial;
     background-image: url("../icons/background1.jpg");
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-position: center center;
     background-attachment: fixed;
-    background-size: cover;
     padding-top: 9rem;
     color: whitesmoke;
     position: relative;

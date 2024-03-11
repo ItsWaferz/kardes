@@ -6,6 +6,7 @@
 
 .produse {
     background-color: rgba(0, 0, 0, 0.377);
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     border-radius: 10px;
     margin: 10px;
@@ -20,6 +21,7 @@ img {
     border-radius: 10px;
 }
 
+.produse:active,
 .produse:hover {
     background-color: rgba(0, 0, 0, 0.219);
     margin: 3px;
@@ -172,10 +174,51 @@ nav a:nth-child(4):hover~span {
 }
 
 @media (max-width: 676px) or (orientation: portrait) {
-        
-    body {
-        padding-top: 6.5rem;
+    .grid-layout {
+        grid-template-columns: 1fr; 
     }
+
+    .imagine-produs img{
+        min-height: 400px;
+    }
+
+    header {
+        margin-top: 1rem;
+    }
+    .hamburger {
+        position: absolute;
+        top: 4rem;
+        right: 3rem;
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 120px;
+        height: 84px;
+    }
+    
+    .hamburger .bar {
+        height: 18px;
+        width: 100%;
+        background-color: #e0ad37;
+        border-radius: 10px;
+    }
+
+    nav div {
+        font-size: 3rem;
+    }
+
+    body {
+        padding-top: 15.5rem;
+    }
+
+    .produse {
+        font-size: 3rem;
+    }
+
+    nav div {
+        font-size: 3rem;
+    }
+
     .hamburger {
         display: flex;
     }
@@ -200,36 +243,15 @@ nav a:nth-child(4):hover~span {
         display: flex;
     }
     .logo {
-        height: 80px;
+        height: 200px;
     }
+
     nav span {
-        left: 0;
-        top: 46px;
-        width: 100%;
-        height: 46px;
+        display: none;
     }
 
-    nav a:nth-child(1):hover~span {
-        top: 0px;
-        width: 100%;
-        left: 0;
-    }
-
-    nav a:nth-child(2):hover~span {
-        top: 46px;
-        width: 100%;
-        left: 0;
-    }
-    
-    nav a:nth-child(3):hover~span {
-        top: 92px;
-        width: 100%;
-        left: 0;
-    }
-    
-    nav a:nth-child(4):hover~span {
-        top: 138px;
-        width: 100%;
-        left: 0;
+    nav a:nth-child(2) {
+        background-color: rgba(156, 107, 0, 0.918);
+        border-radius: 20px;
     }
 }
